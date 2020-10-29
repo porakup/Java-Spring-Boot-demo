@@ -19,11 +19,11 @@ mvnw test
 
 ## Usage
 
-open swagger-ui
+Open swagger-ui
 ```
 http://localhost:8080/swagger-ui/
 ```
-request for register
+Request for register
 ```
 {
     "firstName":"testFirstName",
@@ -36,7 +36,7 @@ request for register
     "salary": "15000"
 }
 ```
-expect response
+Expect response
 ```
 {
     "data": {
