@@ -4,15 +4,15 @@ This project for test purpose.
 
 ## Installation
 
-At project directory terminal run this for build
+At project directory terminal run this for build.
 ```bash 
 mvnw clean install
 ```
-After build success then run this for start
+After build success then run this for start.
 ```bash
 mvnw spring-boot:run
 ```
-Or run this for test
+Or run this for test.
 ```bash
 mvnw test
 ```
@@ -23,7 +23,7 @@ Open swagger-ui
 ```
 http://localhost:8080/swagger-ui/
 ```
-Request for register
+Request for register.
 ```
 {
     "firstName":"testFirstName",
@@ -36,7 +36,7 @@ Request for register
     "salary": "15000"
 }
 ```
-Expect response
+Expect response.
 ```
 {
     "data": {
@@ -58,5 +58,5 @@ Expect response
 ```
 http://localhost:8080/h2-console
 ```
-
+No need password.
 
