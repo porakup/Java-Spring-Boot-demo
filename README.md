@@ -12,7 +12,7 @@ After build success then run this for start
 ```bash
 mvnw spring-boot:run
 ```
-And run this for test
+Or run this for test
 ```bash
 mvnw test
 ```
