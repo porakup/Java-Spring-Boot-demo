@@ -4,15 +4,15 @@ This project for test purpose.
 
 # Installation
 
-at project directory terminal run this for build
+At project directory terminal run this for build
 ```bash 
 mvnw clean install
 ```
-after build success then run thie for start
+After build success then run this for start
 ```bash
 mvnw spring-boot:run
 ```
-run this for test
+And run this for test
 ```bash
 mvnw test
 ```
