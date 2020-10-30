@@ -6,15 +6,15 @@ This project for test purpose.
 
 At project directory terminal run this for build.
 ```bash 
-mvn clean install
+mvnw clean install
 ```
 After build success then run this for start.
 ```bash
-mvn spring-boot:run
+mvnw spring-boot:run
 ```
 Or run this for test.
 ```bash
-mvn test
+mvnw test
 ```
 
 ## Usage
