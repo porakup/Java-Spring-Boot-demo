@@ -51,11 +51,11 @@ public class UserServiceImpl implements UserService {
 			throw new BusinessException("Salary must be numeric.");
 		}
 		
-		if(Optional.ofNullable(userRepository.findByEmail(aes.encrypt(req.getEmail()))).isPresent()) {
+		if(userRepository.checkDuplicateEmail(aes.encrypt(req.getEmail()))) {
 			throw new BusinessException("This email is not available.");
 		}
 		
-		if(Optional.ofNullable(userRepository.findByTelephoneNumber(aes.encrypt(req.getTelephoneNumber()))).isPresent()) {
+		if(userRepository.checkDuplicateTelephoneNumber(aes.encrypt(req.getTelephoneNumber()))) {
 			throw new BusinessException("This telephone number is not available.");
 		}
 		

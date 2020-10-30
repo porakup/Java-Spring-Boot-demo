@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import dev.demo.registration.entity.User;
 
 @Repository
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<User, Long>, UserRepositoryCustom {
 	
 	@Query(value = "SELECT U.* FROM USER U WHERE U.TELEPHONE_NUMBER = :telephoneNumber", nativeQuery = true)
     User findByTelephoneNumber(@Param("telephoneNumber") String telephoneNumber);
